@@ -26,10 +26,6 @@ app.use(cors());
 app.use("/api/send-message", messageRoute);
 app.use("/api/bots", botRoute);
 
-app.get("/", (req, res) => {
-  res.send("Hello there! Api is working");
-});
-
 app.listen(port, "0.0.0.0", () => {
   // telegrambot("Bot chào chị Vân");
   console.log("Server running on port 4000");
