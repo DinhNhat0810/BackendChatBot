@@ -30,7 +30,7 @@ app.get("/", (req, res) => {
   res.send("Hello there! Api is working");
 });
 
-app.listen(port, () => {
+app.listen(port, "0.0.0.0", () => {
   // telegrambot("Bot chào chị Vân");
   console.log("Server running on port 4000");
   console.log(`Example app listening at http://localhost:${port}`);
