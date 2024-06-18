@@ -9,6 +9,7 @@ router.post("/", getTokenMiddleware, async (req, res) => {
       return res.status(400).json({ message: "Message is required" });
     }
 
+    // https://apps.timwhitlock.info/emoji/tables/unicode
     const result = await req.bot.sendMessage(req.groupId, req.body.message, {
       parse_mode: "html",
     });
